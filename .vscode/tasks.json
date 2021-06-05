@@ -6,19 +6,19 @@
         {
             "label": "apio build",
             "type": "shell",
-            "command": "apio build",
+            "command": "${config:apio_path} build",
             "group": "build"
         },
         {
             "label": "apio clean",
             "type": "shell",
-            "command": "apio clean",
+            "command": "${config:apio_path} clean",
             "group": "build"
         },
         {
             "label": "apio upload",
             "type": "shell",
-            "command": "apio upload",
+            "command": "${config:apio_path} upload",
             "group": "build"
         }
     ]
