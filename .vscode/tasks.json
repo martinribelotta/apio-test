@@ -22,9 +22,13 @@
             "group": "build"
         },
         {
-            "label": "apio upload",
+            "label": "apio show schematic",
             "type": "shell",
-            "command": "${config:apio_path} upload",
+            "command": "apio",
+            "args": [
+                "raw",
+                "yosys -p \"read_verilog ${file}; show -format dot -colors 123456 -stretch -prefix ${fileBasenameNoExtension}-diagram\""
+            ],
             "group": "build"
         },
         {

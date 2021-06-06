@@ -4,5 +4,5 @@
 *.json
 *.out
 *.vcd
-show.png
+*.dot
 build
