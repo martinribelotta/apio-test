@@ -8,11 +8,10 @@
 //-------------------------------------------------------------------
 `default_nettype none
 `define DUMPSTR(x) `"x.vcd`"
-`timescale 100 ms / 10 ms
+`timescale 10 ns / 10 ns
 
 module Blinky_tb();
 
-//-- Simulation time: 1us (10 * 100ns)
 parameter DURATION = 1000000;
 
 //-- Clock signal. It is not used in this simulation
@@ -30,7 +29,6 @@ Test UUT (
            .LED3(l3),
            .CLK(clk)
          );
-
 
 initial begin
 

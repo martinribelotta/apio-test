@@ -14,6 +14,6 @@ module Test (
   always @(posedge CLK) 
     counter <= counter + 1;
 
-  assign {LED0, LED1, LED2, LED3} = counter[23:20];
+  assign {LED0, LED1, LED2, LED3} = counter[20:16];
 
 endmodule
