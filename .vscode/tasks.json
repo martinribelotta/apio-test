@@ -20,6 +20,18 @@
             "type": "shell",
             "command": "${config:apio_path} upload",
             "group": "build"
+        },
+        {
+            "label": "apio upload",
+            "type": "shell",
+            "command": "${config:apio_path} upload",
+            "group": "build"
+        },
+        {
+            "label": "apio simulate",
+            "type": "shell",
+            "command": "${config:apio_path} sim",
+            "group": "build"
         }
     ]
 }
